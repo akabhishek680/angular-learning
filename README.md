@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 # angular-learning
+<<<<<<< HEAD
 angular practice repo!!!
 =======
 # AngularLearningProject
@@ -30,3 +31,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 >>>>>>> poc/reactive-forms
+=======
+angular poc repo!!!
+>>>>>>> 70be15d298b3a4e9ed05b165ab00d145553a4ed8
