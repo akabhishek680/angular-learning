@@ -16,11 +16,23 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
     path: 'about',
     component: AboutComponent
   },
   {
     path: 'profile',
+    component: ProfileComponent
+  },
+  {
+    path: 'profile/:name',
+    component: ProfileComponent
+  },
+  {
+    path: 'profile/:name/:location',
     component: ProfileComponent
   },
   {
