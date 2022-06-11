@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-learning-project';
+
+  prodQty: number = 0;
+
+  updateQty = (qty: string) => {
+    this.prodQty = Number(qty);
+  }
 }
