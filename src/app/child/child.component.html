@@ -1,0 +1,18 @@
+<h3 [ngStyle]="{'text-decoration': 'underline'}">Child Component</h3>
+
+<button [ngStyle]="{'color':'white', 'background': 'black', 'padding': '8px', 'font-weight': 'bold', 'margin-left': '3px', 'margin-right': '3px'}" (click)="sendEmpCount()">Show Emp Count In Parent</button>
+
+<div *ngIf="employeeName.length != 0 && employeePhoneNumber.length != 0">
+    
+    <h3>Employee Details</h3>
+    <h3>Employee Name</h3>
+    <div *ngFor="let eName of employeeName; index as i">
+        {{i+1}} &nbsp; &nbsp;{{eName}}
+    </div>
+
+    <h3>Employee Number</h3>
+    <div *ngFor="let ePhoneNumber of employeePhoneNumber; let i = index">
+        {{i + 1}} &nbsp; &nbsp; {{ePhoneNumber}}
+    </div>
+    
+</div>
