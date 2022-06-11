@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-learning-project';
+
+  showEmpDetail = (value: string) => {
+    console.log(value)
+  }
 }
