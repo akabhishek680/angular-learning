@@ -21,7 +21,7 @@ const routes: Routes = [
   },
   {
     path: 'about',
-    component: AboutComponent
+    redirectTo: 'profile'
   },
   {
     path: 'profile',

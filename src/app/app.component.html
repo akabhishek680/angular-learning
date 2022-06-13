@@ -1,15 +1,10 @@
-<h2 [ngStyle]="{'text-decoration': 'underline'}">Angular routing POC</h2>
-<div>
-    <a routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
-</div> <br>
-<div>
-    <a routerLink="/about" routerLinkActive="active-link">About</a>
-</div> <br>
-<div>
-    <a routerLink="/profile" routerLinkActive="active-link">Profile</a>
-</div> <br>
-<div>
-    <a routerLink="/contact" routerLinkActive="active-link">Contact</a>
-</div> <br>
+<h2 [ngStyle]="{'text-decoration': 'underline', 'text-align': 'center'}">Angular routing POC</h2>
+
+<a routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a> <br><br>
+<a routerLink="/about" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">About</a> <br><br>
+<a routerLink="/profile" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Profile</a> <br><br>
+<a routerLink="/contact" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Contact</a> <br><br>
+
+<button (click)="redirectToContact()" [ngStyle]="{'background-color': 'black', 'padding': '6px', 'color': 'white', 'cursor': 'pointer'}">Redirect To Contact</button>
 
 <router-outlet></router-outlet>
