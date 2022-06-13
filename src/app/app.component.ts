@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-learning-project';
+
+  myText: string = 'aBhIsHeK';
+
+  empDetails = {
+    name: 'abhishek',
+    age: 25
+  }
 }
