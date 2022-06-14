@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-learning-project';
+
+  malware = "Some Random Data receiving from API";
+
+  trustedContent: SafeHtml;
+
+  constructor(private sanitizer: DomSanitizer) { 
+    this.trustedContent = this.sanitizer.bypassSecurityTrustHtml(this.malware);
+  }
 }
