@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminModule } from 'src/admin/admin.module';
 import { AboutComponent } from 'src/components/about/about.component';
 import { ContactComponent } from 'src/components/contact/contact.component';
 import { HomeComponent } from 'src/components/home/home.component';
@@ -58,6 +59,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AdminModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
