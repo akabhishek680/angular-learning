@@ -7,7 +7,7 @@ export class CustomDirectiveDirective {
 
   constructor() { }
 
-  @HostBinding('class.red-text') redText: any;
+  @HostBinding('class.white-text') redText: any;
   @HostListener('click') changeTextColor = () => {
     this.redText = !this.redText;
   }
