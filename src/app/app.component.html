@@ -4,8 +4,12 @@
 <a routerLink="/about" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">About</a> <br><br>
 <a routerLink="/profile" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Profile</a> <br><br>
 <a routerLink="/contact" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Contact</a> <br><br>
-<a routerLink="/admin-login" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Admin login</a> <br><br>
-<a routerLink="/add-admin" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Add Admin</a> <br><br>
+<h2>Admin</h2>
+<a routerLink="/admin/admin-login" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Admin login</a> <br><br>
+<a routerLink="/admin/add-admin" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Add Admin</a> <br><br>
+<h2>System Admin</h2>
+<a routerLink="/system-admin/admin-login" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Admin login</a> <br><br>
+<a routerLink="/system-admin/add-admin" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Add Admin</a> <br><br>
 
 <button (click)="redirectToContact()" [ngStyle]="{'background-color': 'black', 'padding': '6px', 'color': 'white', 'cursor': 'pointer'}">Redirect To Contact</button>
 

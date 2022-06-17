@@ -7,6 +7,7 @@ import { ContactComponent } from 'src/components/contact/contact.component';
 import { HomeComponent } from 'src/components/home/home.component';
 import { PageNotFoundComponent } from 'src/components/page-not-found/page-not-found.component';
 import { ProfileComponent } from 'src/components/profile/profile.component';
+import { SystemAdminModule } from 'src/system-admin/system-admin.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -60,6 +61,7 @@ const routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     AdminModule,
+    SystemAdminModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
