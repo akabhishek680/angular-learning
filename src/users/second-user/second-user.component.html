@@ -1,0 +1,12 @@
+<h3>Second user</h3>
+<input type="text" placeholder="enter seat number" #seatNumber> <br><br>
+<button (click)="bookSeat(seatNumber.value)" [ngStyle]="{'background': 'black', 'color': 'white', 'padding': '7px', 'cursor': 'pointer'}">Book Seat</button>
+
+<button (click)="getBookedSeat()" [ngStyle]="{'background': 'black', 'color': 'white', 'padding': '7px', 'cursor': 'pointer', 'margin-left': '2rem'}">Get Book Seat Details</button>
+
+<h3>Booked Seat List</h3>
+<div *ngFor="let seat of bookedSeat">
+    <ul>
+        <li>{{seat}}</li>
+    </ul>
+</div>
