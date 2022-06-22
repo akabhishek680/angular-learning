@@ -1,0 +1,11 @@
+<h3 [ngStyle]="{'text-decoration': 'underline'}">Profile component</h3>
+
+<p>To load data in <strong>local storage</strong></p>
+<button (click)="getLocal()" [ngStyle]="{'background': 'black', 'color': 'white', 'padding': '10px', 'font-weight': 'bold', 'margin': '10px', 'cursor': 'pointer'}" >get local data</button>
+<button (click)="userNameRemoveLocal()" [ngStyle]="{'background': 'black', 'color': 'white', 'padding': '10px', 'font-weight': 'bold', 'margin': '10px', 'cursor': 'pointer'}" >remove username</button>
+<button (click)="clearLocal()" [ngStyle]="{'background': 'black', 'color': 'white', 'padding': '10px', 'font-weight': 'bold', 'margin': '10px', 'cursor': 'pointer'}" >clear local storage</button>
+
+<p>To load data <strong>session management</strong></p>
+<button (click)="getSession()" [ngStyle]="{'background': 'black', 'color': 'white', 'padding': '10px', 'font-weight': 'bold', 'margin': '10px', 'cursor': 'pointer'}" >get session data</button>
+<button (click)="priceRemoveSession()" [ngStyle]="{'background': 'black', 'color': 'white', 'padding': '10px', 'font-weight': 'bold', 'margin': '10px', 'cursor': 'pointer'}" >remove price</button>
+<button  (click)="clearSession()"[ngStyle]="{'background': 'black', 'color': 'white', 'padding': '10px', 'font-weight': 'bold', 'margin': '10px', 'cursor': 'pointer'}" >clear session storage</button>
